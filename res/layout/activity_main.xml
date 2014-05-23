@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/key_AC"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:text="@string/key_AC_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_C"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_toRightOf="@id/key_AC"
+            android:text="@string/key_C_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_sign"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_toRightOf="@+id/key_C"
+            android:text="@string/key_sign_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_7"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_AC"
+            android:text="@string/key_7_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_8"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_C"
+            android:layout_toRightOf="@id/key_7"
+            android:text="@string/key_8_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_9"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_sign"
+            android:layout_toRightOf="@id/key_8"
+            android:text="@string/key_9_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_4"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_7"
+            android:text="@string/key_4_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_5"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_8"
+            android:layout_toRightOf="@id/key_4"
+            android:text="@string/key_5_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_6"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_9"
+            android:layout_toRightOf="@id/key_5"
+            android:text="@string/key_6_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_1"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_4"
+            android:text="@string/key_1_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_2"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_5"
+            android:layout_toRightOf="@id/key_1"
+            android:text="@string/key_2_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_3"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_6"
+            android:layout_toRightOf="@id/key_2"
+            android:text="@string/key_3_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_0"
+            android:layout_width="@dimen/wide_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_1"
+            android:text="@string/key_0_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_equal"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_3"
+            android:layout_toRightOf="@id/key_0"
+            android:text="@string/key_equal_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_div"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_toRightOf="@id/key_sign"
+            android:text="@string/key_div_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_mul"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_div"
+            android:layout_toRightOf="@id/key_9"
+            android:text="@string/key_mul_label"
+            android:textSize="@dimen/key_label_size" />
+
+        <Button
+            android:id="@+id/key_sub"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/normal_key_size"
+            android:layout_below="@id/key_mul"
+            android:layout_toRightOf="@id/key_6"
+            android:text="@string/key_sub_label"
+            android:textSize="@dimen/key_label_size"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/key_add"
+            android:layout_width="@dimen/normal_key_size"
+            android:layout_height="@dimen/wide_key_size"
+            android:layout_below="@id/key_sub"
+            android:layout_toRightOf="@id/key_3"
+            android:text="@string/key_add_label"
+            android:textSize="@dimen/key_label_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="@dimen/display_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keypad"
+        android:layout_alignRight="@+id/keypad"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:gravity="right"
+        android:text="@string/display_initial_text"
+        android:textSize="@dimen/display_text_size" />
+
+</RelativeLayout>
